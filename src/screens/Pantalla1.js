@@ -1,5 +1,5 @@
 import { Image, StyleSheet, View } from "react-native";
-import Icon from "../img/ricaldoneeee.jpeg";
+import Icon from "../img/menu.webp";
 
 export default function Pantalla1(){
     return(
