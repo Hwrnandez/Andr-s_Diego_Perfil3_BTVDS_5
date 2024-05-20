@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, ScrollView, StyleSheet } from 'react-native';
 import { Card, Title, Paragraph } from 'react-native-paper';
 
-const studentsData = [
+const datosestudianres = [
   { id: 1, name: 'Andrés Eleazar Hernández García', carnet: '20220215', photo: require('../img/andres.png') },
   { id: 2, name: 'Diego Enrrique Juarez Mazariego', carnet: '20220196', photo: require('../img/diego.png') }
 ];
@@ -10,7 +10,7 @@ const studentsData = [
 const Pantallaestudiante = () => {
   return (
     <ScrollView style={styles.container}>
-      {studentsData.map(student => (
+      {datosestudianres.map(student => (
         <Card key={student.id} style={styles.card}>
           <Card.Content style={styles.cardContent}>
             <Card.Cover source={student.photo} style={styles.imagen} />

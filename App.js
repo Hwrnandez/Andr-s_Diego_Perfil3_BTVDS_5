@@ -32,12 +32,12 @@ export default function App() {
       <Tab.Navigator  screenOptions={{
           headerShown: false
         }}>
-        <Tab.Screen name="home" component={inicio} options={{
+        <Tab.Screen name="Inicio" component={inicio} options={{
             tabBarIcon: ({ color, size }) => (
               <Ionicons name="home-outline" size={size} color={color} />
             ),
           }}/>
-        <Tab.Screen name="Comidas" component={pantalla2} options={{
+        <Tab.Screen name="comida" component={pantalla2} options={{
             tabBarIcon: ({ color, size }) => (
               <Ionicons name="person-outline" size={size} color={color} />
             ),
