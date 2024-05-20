@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, ScrollView, StyleSheet } from 'react-native';
 import { Card, Title, Paragraph } from 'react-native-paper';
 
-const datosestudianres = [
+const datosestudiantes = [
   { id: 1, name: 'Andrés Eleazar Hernández García', carnet: '20220215', photo: require('../img/andres.png') },
   { id: 2, name: 'Diego Enrrique Juarez Mazariego', carnet: '20220196', photo: require('../img/diego.png') }
 ];
@@ -10,7 +10,7 @@ const datosestudianres = [
 const Pantallaestudiante = () => {
   return (
     <ScrollView style={styles.container}>
-      {datosestudianres.map(student => (
+      {datosestudiantes.map(student => (
         <Card key={student.id} style={styles.card}>
           <Card.Content style={styles.cardContent}>
             <Card.Cover source={student.photo} style={styles.imagen} />
@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#D7BDE2',
   },
   card: {
-    marginTop: 150,
+    marginTop: 100,
     marginBottom: 10,
     width: 350,
     alignSelf: 'center',
@@ -40,14 +40,14 @@ const styles = StyleSheet.create({
     width: 100,
     height: 100,
     resizeMode: 'cover',
-    borderRadius: 8,
+    borderRadius: 10,
   },
   cardContent: {
     alignItems: 'center',
   },
   title: {
     color: '#fff', 
-    marginBottom: 10, 
+    marginBottom: 100, 
   },
   text: {
     color: '#fff', 
