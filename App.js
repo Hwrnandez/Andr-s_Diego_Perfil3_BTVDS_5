@@ -19,7 +19,7 @@ export default function App() {
   useEffect(() =>{
     setTimeout(() =>{
       setIsShowSplash(false);
-    }, 3000);
+    }, 4000);
     
   });
   
