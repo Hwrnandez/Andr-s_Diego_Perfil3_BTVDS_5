@@ -7,7 +7,7 @@ const studentsData = [
   { id: 2, name: 'Diego Enrrique Juarez Mazariego', carnet: '20220196', photo: require('../img/diego.png') }
 ];
 
-const StudentsScreen = () => {
+const Pantallaestudiante = () => {
   return (
     <ScrollView style={styles.container}>
       {studentsData.map(student => (
@@ -27,14 +27,14 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 10,
-    backgroundColor: '#fff',
+    backgroundColor: '#D7BDE2',
   },
   card: {
-    marginTop: 130,
-    marginBottom: 0,
-    width: 300,
+    marginTop: 150,
+    marginBottom: 10,
+    width: 350,
     alignSelf: 'center',
-    backgroundColor: '#391081',
+    backgroundColor: '#283747',
   },
   imagen: {
     width: 100,
@@ -54,4 +54,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default StudentsScreen;
+export default Pantallaestudiante;
