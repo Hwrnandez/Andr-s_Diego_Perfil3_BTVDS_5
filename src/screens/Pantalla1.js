@@ -8,7 +8,7 @@ export default function Pantalla1(){
             <View>
 
                 <Image source={Icon} style={styles.image}/>
-
+ 
             </View>
 
         </View>
